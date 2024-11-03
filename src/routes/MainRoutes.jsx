@@ -10,7 +10,6 @@ const UserTable = Loadable(lazy(() => import('views/dashboard/users')));
 const QuizManagementTable = Loadable(lazy(() => import('views/dashboard/quiz')));
 
 const FeedbackTable = Loadable(lazy(() => import('views/dashboard/feedbacks')));
-const ChatbotScreen = Loadable(lazy(() => import('views/dashboard/chatbotScreen')));
 
 
 // const UtilsMaterialIcons = Loadable(lazy(() => import('views/utilities/MaterialIcons')));
@@ -50,11 +49,7 @@ const MainRoutes = {
           path: 'feedbacks',
           element: <FeedbackTable />
         }
-        ,
-        {
-          path: 'chatbot',
-          element: <ChatbotScreen />
-        }
+        
         
       ]
     }

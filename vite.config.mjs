@@ -40,10 +40,10 @@ export default defineConfig({
   },
   server: {
     open: true,
-    port: 3000,
+    port: 9000,
   },
   preview: {
     open: true,
-    port: 3000,
+    port: 9000,
   },
 });
