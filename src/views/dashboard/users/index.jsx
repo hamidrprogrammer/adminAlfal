@@ -51,7 +51,7 @@ const UserTable = () => {
   });
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/ai/users');
+      const response = await fetch('https://bu-fos-mastermind.solutions-apps.com/ai/users');
       if (response.ok) {
         const data = await response.json();
         setUsers(data);
@@ -161,7 +161,7 @@ const UserTable = () => {
     e.preventDefault();
     setIsUser(true)
     try {
-        const response = await axios.post('http://127.0.0.1:8000/ai/invite', {
+        const response = await axios.post('https://bu-fos-mastermind.solutions-apps.com/ai/invite', {
             email: newUser.email,
             display_name: newUser.name + " " +newUser.familyName,
         });

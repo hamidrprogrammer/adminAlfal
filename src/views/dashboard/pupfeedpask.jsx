@@ -31,7 +31,7 @@ const PopularCardFeedBack = ({ isLoading }) => {
     const fetchQuizzes = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://127.0.0.1:8000/ai/mostfeedback'); // Adjust the URL as necessary
+        const response = await fetch('https://bu-fos-mastermind.solutions-apps.com/ai/mostfeedback'); // Adjust the URL as necessary
         if(response.ok){
           const data = await response.json();
           setQuizzes(data);
